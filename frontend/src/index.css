@@ -75,20 +75,32 @@ code {
   background-color: var(--secondary-color);
   color: white;
 }
+.btn-secondary:hover {
+  background-color: #4b5563;
+}
 
 .btn-success {
   background-color: var(--success-color);
   color: white;
+}
+.btn-success:hover {
+  background-color: #059669;
 }
 
 .btn-warning {
   background-color: var(--warning-color);
   color: white;
 }
+.btn-warning:hover {
+  background-color: #d97706;
+}
 
 .btn-error {
   background-color: var(--error-color);
   color: white;
+}
+.btn-error:hover {
+  background-color: #b91c1c;
 }
 
 .card {
@@ -184,6 +196,36 @@ code {
   opacity: 0;
   transform: translateY(-10px);
   transition: opacity 200ms, transform 200ms;
+}
+
+/* Modal styling */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+
+.modal-content {
+  background-color: var(--card-background);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-lg);
+  max-width: 32rem;
+  width: 100%;
+  padding: 1.5rem;
+}
+
+/* Navbar styling */
+.navbar {
+  background-color: #ffffff;
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+  position: sticky;
+  top: 0;
+  z-index: 40;
 }
 
 /* Mobile responsive improvements */
